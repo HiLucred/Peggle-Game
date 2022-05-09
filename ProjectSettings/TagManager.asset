@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dead Zone
   - Basket
+  - Bullet
   layers:
   - Default
   - TransparentFX
