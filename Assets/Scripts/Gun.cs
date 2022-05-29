@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
 
     private bool _canShoot;
     private float _counter;
-
+    
     private void Update()
     {
         PrepareBulletToShoot();

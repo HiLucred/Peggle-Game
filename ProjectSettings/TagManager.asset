@@ -7,6 +7,7 @@ TagManager:
   - Dead Zone
   - Basket
   - Bullet
+  - Collision
   layers:
   - Default
   - TransparentFX

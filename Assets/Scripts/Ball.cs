@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private float ballForce;
+    //[SerializeField] private ParticleSystem dustParticle;
 
     private Camera _camera;
     private Rigidbody2D _rigidbody2D;
@@ -44,6 +45,14 @@ public class Ball : MonoBehaviour
     private void DestroyBall()
     {
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Collision"))
+        {
+            //dustParticle.Play();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
